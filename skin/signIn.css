@@ -1,0 +1,57 @@
+body{
+    background-color: #fff;
+    margin: auto;
+}
+
+p{
+    font-size: 20px;
+}
+div {
+    background-color: #c9c9c9;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color : white;
+    border-radius: 3%;
+    margin-top: 50px;
+
+}
+
+form{
+    padding-top : 50px;
+}
+input{
+    margin-bottom: 20px;
+    padding : 20px;
+}
+
+button{
+
+    border-radius: 7%;
+    background-color: #199ED8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+}
+.buttona{
+
+    border-radius: 7%;
+    background-color: #199ED8;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    display: block;
+    width : 35%;
+}
