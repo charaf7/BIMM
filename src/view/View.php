@@ -262,6 +262,7 @@ class View{
 
     protected function getFormLogInFields(UserBuilder $builder) {
         $s = "";
+        $displayError = "none";
 
         $emailRef = $builder->getEmailRef();
         $err = $builder->getErrors($emailRef);
@@ -271,7 +272,8 @@ class View{
         $s .= '" ';
         $s .= '	/>';
         if ($err !== null)
-            $s .= ' <span style="color: red; display: block;">'.$err.'</span>';
+            $displayError = "block";
+        $s .= ' <span class="error-message" style="display:'.$displayError.';">'.$err.'</span>';
         $s .= '</div>';
 
         $passRef = $builder->getPasswordRef();
@@ -282,7 +284,8 @@ class View{
         $s .= '" ';
         $s .= '	/>';
         if ($err !== null)
-            $s .= ' <span style="color: red; display: block;">'.$err.'</span>';
+            $displayError = "block";
+        $s .= ' <span class="error-message" style="display:'.$displayError.';">'.$err.'</span>';
         $s .= '</div>';
 
         return $s;

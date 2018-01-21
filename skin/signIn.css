@@ -28,8 +28,9 @@ p {
     padding-right: 20px;
 }
 .login-box .input-container {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     text-align: left;
+    position: relative;
 }
 .login-box .input-field {
     font-size: 16px;
@@ -37,7 +38,12 @@ p {
     box-sizing: border-box;
     padding : 20px;
 }
-
+.input-container .error-message {
+    position: absolute;
+    color:red; 
+    display:none; 
+    margin-top:5px;
+}
 .btn {
     border-radius: 8px;
     background-color: #199ED8;
