@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="skin/signIn.css" />
 </head>
 <body>
-<div>
-    <h3>BIMM</h3>
-    <form action="<?php echo $this->router->dashPage();?>" method="POST">
+<div class="login-box">
+    <!-- <h1>BIMM</h1> -->
+    <img src="src/res/logo.svg" alt="logo-bimm" width="300">
+    <form class="login-form" action="<?php echo $this->router->dashPage();?>" method="POST">
         <?php echo self::getFormLogInFields($builder);?>
-        <button class="button"> Connexion </button>
-        <br>
-        <span>Vous avez pas encore un compte?</span><br>
-        <a class="buttona" href="<?php echo $this->router->signInPage();?>">Créer un compte</a>
+        <button class="btn btn-login"> Connexion </button>
+        <p>Vous n'avez pas encore de compte?</p>
+        <a class="btn btn-link" href="<?php echo $this->router->signInPage();?>">Créer un compte</a>
     </form>
 </div>
 </body>

@@ -265,23 +265,25 @@ class View{
 
         $emailRef = $builder->getEmailRef();
         $err = $builder->getErrors($emailRef);
-        if ($err !== null)
-            $s .= ' <span style="color: red;">'.$err.'</span>';
-        $s .='<br>';
-        $s .= '<input type="email" name="'.$emailRef.'" placeholder="entrer votre email" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="email" name="'.$emailRef.'" placeholder="Entrer votre email" value="';
         $s .= self::htmlesc($builder->getData($emailRef));
         $s .= '" ';
         $s .= '	/>';
+        if ($err !== null)
+            $s .= ' <span style="color: red; display: block;">'.$err.'</span>';
+        $s .= '</div>';
 
         $passRef = $builder->getPasswordRef();
         $err = $builder->getErrors($passRef);
-        if ($err !== null)
-            $s .= ' <span style="color: red;">'.$err.'</span>';
-        $s .='<br>';
-        $s .= '<input type="password" name="'.$passRef.'" placeholder="entrer votre mot de passe" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="password" name="'.$passRef.'" placeholder="Entrer votre mot de passe" value="';
         $s .= self::htmlesc($builder->getData($passRef));
         $s .= '" ';
         $s .= '	/>';
+        if ($err !== null)
+            $s .= ' <span style="color: red; display: block;">'.$err.'</span>';
+        $s .= '</div>';
 
         return $s;
     }
