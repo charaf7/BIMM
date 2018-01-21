@@ -18,7 +18,8 @@
 </script>
 <body>
     <div class="header">
-        <h2>BIMM</h2>
+        <h1 style="display:none;">BIMM</h1>
+        <img class="logo" src="src/res/logo.svg" alt="logo-bimm" width="150">
         <a class="logout" href="<?php echo $this->router->profil();?>"> Profil </a>
         <a class="logout" href="<?php echo $this->router->logOut();?>"> Log out </a>
     </div>
