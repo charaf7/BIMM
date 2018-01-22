@@ -25,7 +25,7 @@
     </div>
 
     <main>
-        <div class="block-container">
+        <div class="block-container flex">
             <div class="axeBox">
                 <a href="<?php echo $this->router->axe1();?>">
                     <img class="axePicto" src="src/res/picto-offre.svg" alt="picto offre" width="300">
