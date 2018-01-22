@@ -25,39 +25,59 @@
     </div>
 
     <main>
-        <div class="axeBox">
-            <div class="axeLink">
-                <a href="<?php echo $this->router->axe1();?>"> AXE1</a>
+        <div class="block-container">
+            <div class="axeBox">
+                <a href="<?php echo $this->router->axe1();?>">
+                    <img class="axePicto" src="src/res/picto-offre.svg" alt="picto offre" width="300">
+                </a>
+                <a href="<?php echo $this->router->axe1();?>">
+                    <h2>OFFRE</h2>
+                </a>
             </div>
-        </div>
 
-        <div class="axeBox">
-            <div class="axeLink">
-                <a href="<?php echo $this->router->axe2();?>"> AXE2</a>
+            <div class="axeBox">
+                <a href="<?php echo $this->router->axe2();?>">
+                    <img class="axePicto" src="src/res/picto-organisation.svg" alt="picto organisation" width="300">
+                </a>
+                <a href="<?php echo $this->router->axe2();?>">
+                    <h2>ORGANISATION</h2>
+                </a>
             </div>
-        </div>
 
-        <div class="axeBox">
-            <div class="axeLink">
-                <a href="<?php echo $this->router->axe3();?>"> AXE3</a>
+            <div class="axeBox">
+                <a href="<?php echo $this->router->axe3();?>">
+                    <img class="axePicto" src="src/res/picto-personne.svg" alt="picto personne" width="300">
+                </a>
+                <a href="<?php echo $this->router->axe3();?>">
+                    <h2>PERSONNE</h2>
+                </a>
             </div>
-        </div>
 
-        <div class="axeBox">
-            <div class="axeLink">
-                <a href="<?php echo $this->router->axe4();?>"> AXE4</a>
+            <div class="axeBox">
+                <a href="<?php echo $this->router->axe4();?>">
+                    <img class="axePicto" src="src/res/picto-strategie.svg" alt="picto stratégie" width="300"> 
+                </a>
+                <a href="<?php echo $this->router->axe4();?>">
+                    <h2>STRATEGIE</h2>
+                </a>
             </div>
-        </div>
 
-        <div class="axeBox">
-            <div class="axeLink">
-                <a href="<?php echo $this->router->axe5();?>"> AXE5</a>
+            <div class="axeBox">
+                <a href="<?php echo $this->router->axe5();?>">
+                    <img class="axePicto" src="src/res/picto-tech-inno.svg" alt="picto technologie et innovation" width="300">
+                </a>
+                <a href="<?php echo $this->router->axe5();?>">
+                    <h2>TECHNOLOGIE ET INNOVATION</h2>
+                </a>
             </div>
-        </div>
 
-        <div class="axeBox">
-            <div class="axeLink">
-                <a href="<?php echo $this->router->axe6();?>"> AXE6</a>
+            <div class="axeBox">
+                <a href="<?php echo $this->router->axe6();?>">
+                    <img class="axePicto" src="src/res/picto-environnement.svg" alt="picto environnement" width="300">
+                </a>
+                <a href="<?php echo $this->router->axe6();?>">
+                    <h2>ENVIRONNEMENT</h2>
+                </a>
             </div>
         </div>
 
