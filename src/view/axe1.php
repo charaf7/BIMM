@@ -43,6 +43,14 @@
             </div>
         </form>
     </div>
+    <div>
+        <?php foreach ($ids as $c){?>
+            <p> Question Id : <?php echo $c->getQuestionId();?></p>
+            <p> text : <?php echo $c->getText();?></p>
+            <p> Coeff : <?php echo $c->getCoeff();?></p>
+            <hr>
+        <?php }?>
+    </div>
 </main>
 
 </body>

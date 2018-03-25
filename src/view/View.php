@@ -66,42 +66,42 @@ class View{
 	        include ("dashboard.php");
     }
 
-    public function makeUserAxe1($axe1){
+    public function makeUserAxe1($axe1,$ids){
         if(!isset($_SESSION['email']) ){
             echo "Session expirée, veuillez vous reconnecter";
         }
         else
             include ("axe1.php");
     }
-    public function makeUserAxe2($axe2){
+    public function makeUserAxe2($axe2,$ids){
         if(!isset($_SESSION['email']) ){
             echo "Session expirée, veuillez vous reconnecter";
         }
         else
             include ("axe2.php");
     }
-    public function makeUserAxe3($axe3){
+    public function makeUserAxe3($axe3,$ids){
         if(!isset($_SESSION['email']) ){
             echo "Session expirée, veuillez vous reconnecter";
         }
         else
             include ("axe3.php");
     }
-    public function makeUserAxe4($axe4){
+    public function makeUserAxe4($axe4,$ids){
         if(!isset($_SESSION['email']) ){
             echo "Session expirée, veuillez vous reconnecter";
         }
         else
             include ("axe4.php");
     }
-    public function makeUserAxe5($axe5){
+    public function makeUserAxe5($axe5,$ids){
         if(!isset($_SESSION['email']) ){
             echo "Session expirée, veuillez vous reconnecter";
         }
         else
             include ("axe5.php");
     }
-    public function makeUserAxe6($axe6){
+    public function makeUserAxe6($axe6,$ids){
         if(!isset($_SESSION['email']) ){
             echo "Session expirée, veuillez vous reconnecter";
         }

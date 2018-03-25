@@ -116,27 +116,33 @@ class Controller
 
     public function userAxe1($email){
         $axe1 = $this->axedb->userAxe1($email);
-        $this->view->makeUserAxe1($axe1);
+        $ids = $this->axedb->getQuestionIds(1);
+        $this->view->makeUserAxe1($axe1,$ids);
     }
     public function userAxe2($email){
         $axe2 = $this->axedb->userAxe2($email);
-        $this->view->makeUserAxe2($axe2);
+        $ids = $this->axedb->getQuestionIds(2);
+        $this->view->makeUserAxe2($axe2,$ids);
     }
     public function userAxe3($email){
         $axe3 = $this->axedb->userAxe3($email);
-        $this->view->makeUserAxe3($axe3);
+        $ids = $this->axedb->getQuestionIds(3);
+        $this->view->makeUserAxe3($axe3,$ids);
     }
     public function userAxe4($email){
         $axe4 = $this->axedb->userAxe4($email);
-        $this->view->makeUserAxe4($axe4);
+        $ids = $this->axedb->getQuestionIds(4);
+        $this->view->makeUserAxe4($axe4,$ids);
     }
     public function userAxe5($email){
         $axe5 = $this->axedb->userAxe5($email);
-        $this->view->makeUserAxe5($axe5);
+        $ids = $this->axedb->getQuestionIds(5);
+        $this->view->makeUserAxe5($axe5,$ids);
     }
     public function userAxe6($email){
         $axe6 = $this->axedb->userAxe6($email);
-        $this->view->makeUserAxe6($axe6);
+        $ids = $this->axedb->getQuestionIds(6);
+        $this->view->makeUserAxe6($axe6,$ids);
     }
 
     public function signInDashboard(array $data){
@@ -183,22 +189,28 @@ class Controller
         $axe5 = $this->axedb->userAxe5($email);
         $axe6 = $this->axedb->userAxe6($email);
         if($id == 1){
-            $this->view->makeUserAxe1($axe1);
+            $ids = $this->axedb->getQuestionIds(1);
+            $this->view->makeUserAxe1($axe1,$ids);
         }
         elseif ($id == 2){
-            $this->view->makeUserAxe2($axe2);
+            $ids = $this->axedb->getQuestionIds(2);
+            $this->view->makeUserAxe2($axe2,$ids);
         }
         elseif ($id == 3){
-            $this->view->makeUserAxe3($axe3);
+            $ids = $this->axedb->getQuestionIds(3);
+            $this->view->makeUserAxe3($axe3,$ids);
         }
         elseif ($id == 4){
-            $this->view->makeUserAxe4($axe4);
+            $ids = $this->axedb->getQuestionIds(4);
+            $this->view->makeUserAxe4($axe4,$ids);
         }
         elseif ($id == 5){
-            $this->view->makeUserAxe5($axe5);
+            $ids = $this->axedb->getQuestionIds(5);
+            $this->view->makeUserAxe5($axe5,$ids);
         }
         elseif ($id == 6){
-            $this->view->makeUserAxe6($axe6);
+            $ids = $this->axedb->getQuestionIds(6);
+            $this->view->makeUserAxe6($axe6,$ids);
         }
         else{
             $this->view->makeUnknownaxePage();

@@ -7,6 +7,7 @@
 require_once("Axe.php");
 require_once("User.php");
 require_once("BimmStorage.php");
+require_once("Question.php");
 
 class BimmStorageDB implements BimmStorage {
     protected $pdo;
@@ -138,6 +139,18 @@ class BimmStorageDB implements BimmStorage {
         }
         return $axe;
 
+    }
+    //get Ids + coff of questions
+    public function getQuestionIds($axe){
+        $req = 'select * from questions WHERE  axe= :axe';
+        $this->connectStatement = $this->pdo->prepare($req);
+        $this->connectStatement->execute(array(":axe" => $axe ));
+        $ids = array();
+
+        while ($arr=$this->connectStatement->fetch()){
+            $ids[]= new Question($arr['id'],$arr['coeff'],$arr['text']);
+        }
+        return $ids;
     }
 
     /*public function userAxes($user){
