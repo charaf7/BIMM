@@ -44,6 +44,9 @@
         </form>
     </div>
     <div>
+        <canvas id="axe1Chart"></canvas>
+    </div>
+    <div>
         <?php foreach ($ids as $c){?>
             <p> Question Id : <?php echo $c->getQuestionId();?></p>
             <p> text : <?php echo $c->getText();?></p>
@@ -53,5 +56,7 @@
     </div>
 </main>
 
+<script src="js/chart.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
