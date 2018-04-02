@@ -35,8 +35,8 @@
       <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/control/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3349">
-              <caret line="197" column="9" lean-forward="false" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
+            <state relative-caret-position="222">
+              <caret line="137" column="43" lean-forward="false" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -48,50 +48,44 @@
             <state relative-caret-position="434">
               <caret line="103" column="43" lean-forward="false" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
               <folding>
-                <marker date="1520885859039" expanded="true" signature="3731:3742" ph="..." />
-                <marker date="1520885859039" expanded="true" signature="4133:4144" ph="..." />
-                <marker date="1520885859039" expanded="true" signature="4533:4544" ph="..." />
-                <marker date="1520885859039" expanded="true" signature="5050:5061" ph="..." />
-                <marker date="1520885859039" expanded="true" signature="5450:5461" ph="..." />
-                <marker date="1520885859039" expanded="true" signature="5856:5867" ph="..." />
-                <marker date="1520885859039" expanded="true" signature="6279:6290" ph="..." />
-                <marker date="1520885859039" expanded="true" signature="6724:6735" ph="..." />
-                <marker date="1520885859039" expanded="true" signature="7149:7160" ph="..." />
+                <marker date="1522704247640" expanded="true" signature="3731:3742" ph="..." />
+                <marker date="1522704247640" expanded="true" signature="4133:4144" ph="..." />
+                <marker date="1522704247640" expanded="true" signature="4533:4544" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="axe1.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="axe1.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/axe1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <state relative-caret-position="481">
+              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BimmStorageDB.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BimmStorageDB.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/BimmStorageDB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="77" column="73" lean-forward="true" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
+            <state relative-caret-position="467">
+              <caret line="137" column="87" lean-forward="false" selection-start-line="137" selection-start-column="87" selection-end-line="137" selection-end-column="87" />
               <folding>
-                <marker date="1520886026962" expanded="true" signature="733:752" ph="select * fro... users" />
-                <marker date="1520886026962" expanded="true" signature="1166:1333" ph="INSERT INTO `users`... " />
-                <marker date="1520886026962" expanded="true" signature="1979:2069" ph="INSERT INTO `useraxes`... " />
-                <marker date="1520886026962" expanded="true" signature="2398:2534" ph="select * fro... users" />
-                <marker date="1520886026962" expanded="true" signature="2907:3043" ph="select * fro... users" />
-                <marker date="1520886026962" expanded="true" signature="3425:3561" ph="select * fro... users" />
-                <marker date="1520886026962" expanded="true" signature="3943:4079" ph="select * fro... users" />
-                <marker date="1520886026962" expanded="true" signature="4461:4597" ph="select * fro... users" />
-                <marker date="1520886026962" expanded="true" signature="4979:5115" ph="select * fro... users" />
-                <marker date="1520886026962" expanded="true" signature="5535:5575" ph="select * fro... questions" />
-                <marker date="1520886026962" expanded="true" signature="6454:6492" ph="select * fro... users" />
-                <marker date="1520886026962" expanded="true" signature="6985:7109" ph="UPDATE users... " />
-                <marker date="1520886026962" expanded="true" signature="7955:7985" ph="select COUNT... questions" />
-                <marker date="1520886026962" expanded="true" signature="8250:8371" ph="UPDATE useraxes... " />
+                <marker date="1522704531921" expanded="true" signature="733:752" ph="select * fro... users" />
+                <marker date="1522704531921" expanded="true" signature="1166:1333" ph="INSERT INTO `users`... " />
+                <marker date="1522704531921" expanded="true" signature="1979:2069" ph="INSERT INTO `useraxes`... " />
+                <marker date="1522704531921" expanded="true" signature="2398:2534" ph="select * fro... users" />
+                <marker date="1522704531921" expanded="true" signature="2921:3057" ph="select * fro... users" />
+                <marker date="1522704531921" expanded="true" signature="3453:3589" ph="select * fro... users" />
+                <marker date="1522704531921" expanded="true" signature="3985:4121" ph="select * fro... users" />
+                <marker date="1522704531921" expanded="true" signature="4517:4653" ph="select * fro... users" />
+                <marker date="1522704531921" expanded="true" signature="5049:5185" ph="select * fro... users" />
+                <marker date="1522704531921" expanded="true" signature="5619:5659" ph="select * fro... questions" />
+                <marker date="1522704531921" expanded="true" signature="6538:6576" ph="select * fro... users" />
+                <marker date="1522704531921" expanded="true" signature="7069:7193" ph="UPDATE users... " />
+                <marker date="1522704531921" expanded="true" signature="8039:8069" ph="select COUNT... questions" />
+                <marker date="1522704531921" expanded="true" signature="8334:8455" ph="UPDATE useraxes... " />
               </folding>
             </state>
           </provider>
@@ -100,8 +94,8 @@
       <file leaf-file-name="Axe.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Axe.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="408">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -186,7 +180,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/model/User.php" />
-        <option value="$PROJECT_DIR$/src/model/Axe.php" />
         <option value="$PROJECT_DIR$/src/view/about.php" />
         <option value="$PROJECT_DIR$/src/view/about.php" />
         <option value="$PROJECT_DIR$/skin/dashboard.css" />
@@ -202,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/view/View.php" />
         <option value="$PROJECT_DIR$/src/view/View.php" />
         <option value="$PROJECT_DIR$/src/model/Question.php" />
-        <option value="$PROJECT_DIR$/src/model/BimmStorageDB.php" />
         <option value="$PROJECT_DIR$/src/control/Controller.php" />
         <option value="$PROJECT_DIR$/src/control/Controller.php" />
         <option value="$PROJECT_DIR$/src/view/axe1.php" />
@@ -211,6 +203,8 @@
         <option value="$PROJECT_DIR$/src/view/axe4.php" />
         <option value="$PROJECT_DIR$/src/view/axe3.php" />
         <option value="$PROJECT_DIR$/src/view/axe2.php" />
+        <option value="$PROJECT_DIR$/src/model/BimmStorageDB.php" />
+        <option value="$PROJECT_DIR$/src/model/Axe.php" />
       </list>
     </option>
   </component>
@@ -221,7 +215,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="30" />
     <option name="width" value="1366" />
     <option name="height" value="738" />
@@ -258,13 +252,13 @@
               <item name="Vinyls" type="b2602c69:ProjectViewProjectNode" />
               <item name="BIMM_" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="control" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Vinyls" type="b2602c69:ProjectViewProjectNode" />
               <item name="BIMM_" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -406,15 +400,15 @@
       <workItem from="1516151333187" duration="5331000" />
       <workItem from="1520882878710" duration="4031000" />
       <workItem from="1522416324155" duration="180000" />
-      <workItem from="1522702345497" duration="1805000" />
+      <workItem from="1522702345497" duration="2318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="341041000" />
+    <option name="totallyTimeSpent" value="341554000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -679,14 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3349">
-          <caret line="197" column="9" lean-forward="false" selection-start-line="197" selection-start-column="9" selection-end-line="197" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/axe6.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
@@ -727,15 +713,9 @@
         <state relative-caret-position="434">
           <caret line="103" column="43" lean-forward="false" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
           <folding>
-            <marker date="1520885859039" expanded="true" signature="3731:3742" ph="..." />
-            <marker date="1520885859039" expanded="true" signature="4133:4144" ph="..." />
-            <marker date="1520885859039" expanded="true" signature="4533:4544" ph="..." />
-            <marker date="1520885859039" expanded="true" signature="5050:5061" ph="..." />
-            <marker date="1520885859039" expanded="true" signature="5450:5461" ph="..." />
-            <marker date="1520885859039" expanded="true" signature="5856:5867" ph="..." />
-            <marker date="1520885859039" expanded="true" signature="6279:6290" ph="..." />
-            <marker date="1520885859039" expanded="true" signature="6724:6735" ph="..." />
-            <marker date="1520885859039" expanded="true" signature="7149:7160" ph="..." />
+            <marker date="1522704247640" expanded="true" signature="3731:3742" ph="..." />
+            <marker date="1522704247640" expanded="true" signature="4133:4144" ph="..." />
+            <marker date="1522704247640" expanded="true" signature="4533:4544" ph="..." />
           </folding>
         </state>
       </provider>
@@ -748,42 +728,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/BimmStorageDB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="137" column="87" lean-forward="false" selection-start-line="137" selection-start-column="87" selection-end-line="137" selection-end-column="87" />
+          <folding>
+            <marker date="1522704531921" expanded="true" signature="733:752" ph="select * fro... users" />
+            <marker date="1522704531921" expanded="true" signature="1166:1333" ph="INSERT INTO `users`... " />
+            <marker date="1522704531921" expanded="true" signature="1979:2069" ph="INSERT INTO `useraxes`... " />
+            <marker date="1522704531921" expanded="true" signature="2398:2534" ph="select * fro... users" />
+            <marker date="1522704531921" expanded="true" signature="2921:3057" ph="select * fro... users" />
+            <marker date="1522704531921" expanded="true" signature="3453:3589" ph="select * fro... users" />
+            <marker date="1522704531921" expanded="true" signature="3985:4121" ph="select * fro... users" />
+            <marker date="1522704531921" expanded="true" signature="4517:4653" ph="select * fro... users" />
+            <marker date="1522704531921" expanded="true" signature="5049:5185" ph="select * fro... users" />
+            <marker date="1522704531921" expanded="true" signature="5619:5659" ph="select * fro... questions" />
+            <marker date="1522704531921" expanded="true" signature="6538:6576" ph="select * fro... users" />
+            <marker date="1522704531921" expanded="true" signature="7069:7193" ph="UPDATE users... " />
+            <marker date="1522704531921" expanded="true" signature="8039:8069" ph="select COUNT... questions" />
+            <marker date="1522704531921" expanded="true" signature="8334:8455" ph="UPDATE useraxes... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Axe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="408">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="137" column="43" lean-forward="false" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/axe1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="481">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/BimmStorageDB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="77" column="73" lean-forward="true" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
-          <folding>
-            <marker date="1520886026962" expanded="true" signature="733:752" ph="select * fro... users" />
-            <marker date="1520886026962" expanded="true" signature="1166:1333" ph="INSERT INTO `users`... " />
-            <marker date="1520886026962" expanded="true" signature="1979:2069" ph="INSERT INTO `useraxes`... " />
-            <marker date="1520886026962" expanded="true" signature="2398:2534" ph="select * fro... users" />
-            <marker date="1520886026962" expanded="true" signature="2907:3043" ph="select * fro... users" />
-            <marker date="1520886026962" expanded="true" signature="3425:3561" ph="select * fro... users" />
-            <marker date="1520886026962" expanded="true" signature="3943:4079" ph="select * fro... users" />
-            <marker date="1520886026962" expanded="true" signature="4461:4597" ph="select * fro... users" />
-            <marker date="1520886026962" expanded="true" signature="4979:5115" ph="select * fro... users" />
-            <marker date="1520886026962" expanded="true" signature="5535:5575" ph="select * fro... questions" />
-            <marker date="1520886026962" expanded="true" signature="6454:6492" ph="select * fro... users" />
-            <marker date="1520886026962" expanded="true" signature="6985:7109" ph="UPDATE users... " />
-            <marker date="1520886026962" expanded="true" signature="7955:7985" ph="select COUNT... questions" />
-            <marker date="1520886026962" expanded="true" signature="8250:8371" ph="UPDATE useraxes... " />
-          </folding>
         </state>
       </provider>
     </entry>

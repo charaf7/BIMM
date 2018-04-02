@@ -7,8 +7,9 @@ class  Axe {
     protected $question;
     protected $value;
     protected $id;
+    protected $coeff;
 
-    public function __construct($questionId,$question,$value)
+    public function __construct($questionId,$question,$value,$coeff)
     {
         /*if (!self::isTitleValid($title))
             throw new Exception("Invalid title entry");*/
@@ -16,6 +17,7 @@ class  Axe {
         $this->question = $question;
         $this->questionId = $questionId;
         $this->value = $value;
+        $this->coeff = $coeff;
     }
 
     public function getId(){
@@ -32,6 +34,9 @@ class  Axe {
     }
     public function getValue(){
         return $this->value;
+    }
+    public function getCoeff(){
+        return $this->coeff;
     }
 
 

@@ -75,7 +75,7 @@ class BimmStorageDB implements BimmStorage {
         $axe = array();
 
         while ($arr=$this->axe1Statement->fetch()){
-            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value']);
+            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value'],$arr['coeff']);
         }
         return $axe;
 
@@ -87,7 +87,7 @@ class BimmStorageDB implements BimmStorage {
         $axe = array();
 
         while ($arr=$this->connectStatement->fetch()){
-            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value']);
+            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value'],$arr['coeff']);
         }
         return $axe;
 
@@ -99,7 +99,7 @@ class BimmStorageDB implements BimmStorage {
         $axe = array();
 
         while ($arr=$this->connectStatement->fetch()){
-            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value']);
+            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value'],$arr['coeff']);
         }
         return $axe;
 
@@ -111,7 +111,7 @@ class BimmStorageDB implements BimmStorage {
         $axe = array();
 
         while ($arr=$this->connectStatement->fetch()){
-            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value']);
+            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value'],$arr['coeff']);
         }
         return $axe;
 
@@ -123,7 +123,7 @@ class BimmStorageDB implements BimmStorage {
         $axe = array();
 
         while ($arr=$this->connectStatement->fetch()){
-            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value']);
+            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value'],$arr['coeff']);
         }
         return $axe;
 
@@ -135,7 +135,7 @@ class BimmStorageDB implements BimmStorage {
         $axe = array();
 
         while ($arr=$this->connectStatement->fetch()){
-            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value']);
+            $axe[]= new Axe($arr['questionId'],$arr['text'],$arr['value'],$arr['coeff']);
         }
         return $axe;
 
