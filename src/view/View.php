@@ -187,75 +187,82 @@ class View{
         $nomRef = $builder->getNomRef();
         $s = "";
         $err = $builder->getErrors($nomRef);
-        if ($err !== null)
-            $s .= ' <span style="color: red;">'.$err.'</span>';
-        $s .='<br>';
-        $s .= '<input type="text" name="'.$nomRef.'" placeholder="Entrer un nom" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="text" name="'.$nomRef.'" placeholder="Entrer un nom" value="';
         $s .= self::htmlesc($builder->getData($nomRef));
         $s .= "\" />";
-        $s .='<br>';
+        if ($err !== null)
+            $displayError = "block";
+        $s .= ' <span class="error-message" style="display:'.$displayError.';">'.$err.'</span>';
+        $s .= '</div>';
 
         $prenomRef = $builder->getPrenomRef();
         $err = $builder->getErrors($prenomRef);
-        if ($err !== null)
-            $s .= ' <span style="color: red;">'.$err.'</span>';
-        $s .='<br>';
-        $s .= '<input type="text" name="'.$prenomRef.'" placeholder="Entrer un prenom" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="text" name="'.$prenomRef.'" placeholder="Entrer un prenom" value="';
         $s .= self::htmlesc($builder->getData($prenomRef));
         $s .= "\" />";
-        $s .='<br>';
+        if ($err !== null)
+            $displayError = "block";
+        $s .= ' <span class="error-message" style="display:'.$displayError.';">'.$err.'</span>';
+        $s .= '</div>';
 
         $emailRef = $builder->getEmailRef();
         $err = $builder->getErrors($emailRef);
-        if ($err !== null)
-            $s .= ' <span style="color: red;">'.$err.'</span>';
-        $s .='<br>';
-        $s .= '<input type="email" name="'.$emailRef.'" placeholder="entrer un email" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="email" name="'.$emailRef.'" placeholder="Entrer un email" value="';
         $s .= self::htmlesc($builder->getData($emailRef));
         $s .= '" ';
         $s .= '	/>';
-        $s .='<br>';
+        if ($err !== null)
+            $displayError = "block";
+        $s .= ' <span class="error-message" style="display:'.$displayError.';">'.$err.'</span>';
+        $s .= '</div>';
 
         $passRef = $builder->getPasswordRef();
         $err = $builder->getErrors($passRef);
-        if ($err !== null)
-            $s .= ' <span style="color: red;">'.$err.'</span>';
-        $s .='<br>';
-        $s .= '<input type="password" name="'.$passRef.'" placeholder="entrer un mot de passe" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="password" name="'.$passRef.'" placeholder="Entrer un mot de passe" value="';
         $s .= self::htmlesc($builder->getData($passRef));
         $s .= '" ';
         $s .= '	/>';
-        $s .='<br>';
+        if ($err !== null)
+            $displayError = "block";
+        $s .= ' <span class="error-message" style="display:'.$displayError.';">'.$err.'</span>';
+        $s .= '</div>';
 
         $entrepriseRef = $builder->getEntrepriseRef();
         $err = $builder->getErrors($entrepriseRef);
-        if ($err !== null)
-            $s .= ' <span style="color: red;">'.$err.'</span>';
-        $s .='<br>';
-        $s .= '<input type="text" name="'.$entrepriseRef.'" placeholder="Entrer un nom d\'entreprise" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="text" name="'.$entrepriseRef.'" placeholder="Entrer un nom d\'entreprise" value="';
         $s .= self::htmlesc($builder->getData($entrepriseRef));
         $s .= "\" />";
-        $s .='<br>';
+        if ($err !== null)
+            $displayError = "block";
+        $s .= ' <span class="error-message" style="display:'.$displayError.';">'.$err.'</span>';
+        $s .= '</div>';
 
         $siretRef = $builder->getSiretRef();
         $err = $builder->getErrors($siretRef);
-        if ($err !== null)
-            $s .= ' <span style="color: red;">'.$err.'</span>';
-        $s .='<br>';
-        $s .= '<input type="text" name="'.$siretRef.'" placeholder="Entrer un numéro SIRET" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="text" name="'.$siretRef.'" placeholder="Entrer un numéro SIRET" value="';
         $s .= self::htmlesc($builder->getData($siretRef));
         $s .= "\" />";
-        $s .='<br>';
+        if ($err !== null)
+            $displayError = "block";
+        $s .= ' <span class="error-message" style="display:'.$displayError.';">'.$err.'</span>';
+        $s .= '</div>';
 
         $functionRef = $builder->getFunctionRef();
         /*$err = $builder->getErrors($functionRef);
         if ($err !== null)
             $s .= ' <span style="color: red;">'.$err.'</span>';*/
-        $s .='<br>';
-        $s .= '<input type="text" name="'.$functionRef.'" placeholder="entrer une fonction" value="';
+        $s .= '<div class="input-container">';
+        $s .= '<input class="input-field" type="text" name="'.$functionRef.'" placeholder="Entrer une fonction" value="';
         $s .= self::htmlesc($builder->getData($functionRef));
         $s .= '" ';
         $s .= '	/>';
+        $s .= '</div>';
 
         return $s;
     }

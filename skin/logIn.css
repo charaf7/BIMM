@@ -1,9 +1,9 @@
-.signin-box {
+.login-box {
     background-color: #c9c9c9;
     display: block;
     margin: 0 auto;
     text-align: center;
-    width: 60%;
+    width: 30%;
     padding: 50px;
     color : white;
     border-radius: 3%;
@@ -11,19 +11,17 @@
 
 }
 
-.signin-form .input-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.login-form {
+    padding-top : 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.signin-form .input-container {
+.login-form .input-container {
     margin-bottom: 35px;
     text-align: left;
     position: relative;
-    width: 49%;
 }
-.signin-form .input-field {
+.login-form .input-field {
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
@@ -31,12 +29,12 @@
 }
 .input-container .error-message {
     position: absolute;
-    color:red;
-    display:none;
+    color:red; 
+    display:none; 
     margin-top:5px;
 }
 
-.btn-signin {
-    /*margin-bottom: 20px;
-    margin-top: 50px;*/
+.btn-login {
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
