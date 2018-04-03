@@ -11,7 +11,7 @@ p {
 }
 
 .header {
-    position: fixed;
+    /*position: fixed;*/
     background-color: #D7D7D7;
     height: 65px;
     width: 100%;
@@ -53,7 +53,8 @@ p {
 .block-container {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 90px;
+    margin-top: 25px;
+    /*padding-top: 90px;*/
 }
 
 .error-message {
