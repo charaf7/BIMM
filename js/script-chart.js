@@ -1,5 +1,27 @@
 $('document').ready(function () {
 
+    var axeParams = [
+        {name:'Offre', backgroundColor:'rgba(247, 127, 55, 0.6)', borderColor:'rgb(247, 127, 55)'},
+        {name:'Organisation', backgroundColor:'rgba(243, 196, 69, 0.6)', borderColor:'rgb(243, 196, 69)'},
+        {name:'Personne', backgroundColor:'rgba(126, 196, 86, 0.6)', borderColor:'rgb(126, 196, 86)'},
+        {name:'Stratégie', backgroundColor:'rgba(246, 105, 110, 0.6)', borderColor:'rgb(246, 105, 110)'},
+        {name:'Technologie et innovation', backgroundColor:'rgba(56, 167, 217, 0.6)', borderColor:'rgb(56, 167, 217)'},
+        {name:'Environnement', backgroundColor:'rgba(128, 115, 176, 0.6)', borderColor:'rgb(128, 115, 176)'},
+    ];
+
+    var currentAxe = $('body').attr('class');
+    var chartLabel = "";
+    var chartBackgroundColor = "";
+    var chartBorderColor = "";
+    for (var index in axeParams) {
+        if (axeParams[index].name.toLowerCase() === currentAxe) {
+            chartLabel = axeParams[index].name;
+            chartBackgroundColor = axeParams[index].backgroundColor;
+            chartBorderColor = axeParams[index].borderColor;
+            break;
+        }
+    }
+
     var buildSkillArray = function () {
         var skillArray = [];
         $('.question-item').each(function( index ) {
@@ -55,8 +77,8 @@ $('document').ready(function () {
         data: {
             //labels: ["Offre"],
             datasets: [{
-                backgroundColor: 'rgba(247, 127, 55, 0.6)',
-                borderColor: 'rgb(247, 127, 55)',
+                backgroundColor: chartBackgroundColor,
+                borderColor: chartBorderColor,
                 data: [0],
             }]
         },
@@ -72,7 +94,7 @@ $('document').ready(function () {
             tooltips: {
                 callbacks: {
                     label: function(tooltipItems, data) {
-                        return 'Offre: ' + tooltipItems.yLabel + '%';
+                        return chartLabel + ':' + tooltipItems.yLabel + '%';
                     }
                 }
             }
