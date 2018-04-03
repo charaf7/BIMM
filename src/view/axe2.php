@@ -8,13 +8,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BIMM - Organisation</title>
+    <title>Axe organisation</title>
     <link rel="stylesheet" href="skin/main.css" />
     <link rel="stylesheet" href="skin/axe.css" />
 
 </head>
 
-<body>
+<body class="organisation">
 <div class="header">
     <a class="menu" href="<?php echo $this->router->dashUsualPage();?>"> Menu </a>
     <h1 style="display:none;">BIMM</h1>
@@ -49,7 +49,7 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/chart.min.js"></script>
-<script src="js/script-axe2.js"></script>
+<script src="js/script-chart.js"></script>
 
 </body>
 </html>

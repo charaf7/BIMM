@@ -94,7 +94,7 @@ $('document').ready(function () {
             tooltips: {
                 callbacks: {
                     label: function(tooltipItems, data) {
-                        return chartLabel + ':' + tooltipItems.yLabel + '%';
+                        return chartLabel + ': ' + tooltipItems.yLabel + '%';
                     }
                 }
             }
