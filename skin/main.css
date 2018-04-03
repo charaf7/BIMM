@@ -9,6 +9,53 @@ p {
     margin: 0;
     margin-bottom: 5px;
 }
+
+.header {
+    position: fixed;
+    background-color: #D7D7D7;
+    height: 65px;
+    width: 100%;
+}
+.header .logo {
+    margin: 12px 0;
+}
+
+.logout {
+    margin: 10px;
+    background-color: #169BD5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    float: right;
+}
+
+.menu {
+    margin: 10px;
+    background-color: #169BD5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    float: left;
+}
+
+.block-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
 .error-message {
     font-size: 14px;
 }

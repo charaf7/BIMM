@@ -1,0 +1,18 @@
+.block-container.axe {
+    display: flex;
+    position: relative;
+}
+
+#axeForm {
+    width: 500px;
+}
+
+.axe .questions {
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+.chart-container {
+    position: absolute;
+    right: 0;
+    width: 700px
+}

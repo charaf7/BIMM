@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Menu</title>
+    <link rel="stylesheet" href="skin/main.css" />
     <link rel="stylesheet" href="skin/dashboard.css" />
 
 </head>
@@ -25,7 +26,7 @@
     </div>
 
     <main>
-        <div class="block-container flex">
+        <div class="block-container dashboard">
             <div class="axeBox">
                 <a href="<?php echo $this->router->axe1();?>">
                     <img class="axePicto" src="src/res/picto-offre.svg" alt="picto offre" width="300">

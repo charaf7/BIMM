@@ -8,22 +8,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Offre</title>
-    <link rel="stylesheet" href="skin/dashboard.css" />
+    <title>BIMM - Offre</title>
+    <link rel="stylesheet" href="skin/main.css" />
+    <link rel="stylesheet" href="skin/axe.css" />
 
 </head>
 
 <body>
-<div class="header">
-    <a class="menu" href="<?php echo $this->router->dashUsualPage();?>"> Menu </a>
-    <h1 style="display:none;">BIMM</h1>
-    <img class="logo" src="src/res/logo.svg" alt="logo-bimm" width="150">
-    <a class="logout" href="<?php echo $this->router->profil();?>"> Profil </a>
-    <a class="logout" href="<?php echo $this->router->logOut();?>"> Log out </a>
-</div>
-
 <main>
-    <div class="block-container">
+    <div class="header">
+        <a class="menu" href="<?php echo $this->router->dashUsualPage();?>"> Menu </a>
+        <h1 style="display:none;">BIMM</h1>
+        <img class="logo" src="src/res/logo.svg" alt="logo-bimm" width="150">
+        <a class="logout" href="<?php echo $this->router->profil();?>"> Profil </a>
+        <a class="logout" href="<?php echo $this->router->logOut();?>"> Log out </a>
+    </div>
+
+
+    <div class="block-container axe">
         <form id="axeForm" method="post" action="<?php echo $this->router->saveAxe(1); ?>">
             <div class="questions">
             <?php foreach ($axe1 as $q){?>
@@ -42,22 +44,17 @@
                 <input type="submit" name="Sauvegarder" value="Sauvegarder">
             </div>
         </form>
+        <div class="chart-container">
+            <canvas id="axeChart"></canvas>
+        </div>
     </div>
-    <div>
-        <canvas id="axe1Chart"></canvas>
-    </div>
-    <div>
-        <?php foreach ($ids as $c){?>
-            <p> Question Id : <?php echo $c->getQuestionId();?></p>
-            <p> text : <?php echo $c->getText();?></p>
-            <p> Coeff : <?php echo $c->getCoeff();?></p>
-            <hr>
-        <?php }?>
-    </div>
+
+
 </main>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/chart.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script-axe1.js"></script>
+
 </body>
 </html>
