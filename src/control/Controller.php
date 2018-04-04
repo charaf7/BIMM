@@ -171,7 +171,7 @@ class Controller
         //$axes = $this->axedb->userAxes($_SESSION['email']);
         foreach ( $data as $questionId => $value){
             if($questionId == "Sauvegarder") continue;
-            $values[] = new Axe($questionId,"",$value);
+            $values[] = new Axe($questionId,"",$value,0);
         }
         if(isset($_SESSION['email']))
             $email = $_SESSION['email'];
