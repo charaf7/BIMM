@@ -8,31 +8,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu</title>
-    <link rel="stylesheet" href="skin/dashboard.css" />
+    <title>Axe personne</title>
+    <link rel="stylesheet" href="skin/main.css" />
+    <link rel="stylesheet" href="skin/axe.css" />
 
 </head>
 
-<body>
+<body class="personne">
 <div class="header">
     <a class="menu" href="<?php echo $this->router->dashUsualPage();?>"> Menu </a>
-    <h2>BIMM</h2>
+    <h1 style="display:none;">BIMM</h1>
+    <img class="logo" src="src/res/logo.svg" alt="logo-bimm" width="150">
     <a class="logout" href="<?php echo $this->router->profil();?>"> Profil </a>
     <a class="logout" href="<?php echo $this->router->logOut();?>"> Log out </a>
 </div>
 
-<div>
-    <form method="post" action="<?php echo $this->router->saveAxe(3); ?>">
+<div class="block-container axe">
+    <form id="axeForm" method="post" action="<?php echo $this->router->saveAxe(3); ?>">
         <div class="questions">
             <?php foreach ($axe3 as $q){?>
-                <div class="q1">
+                <div class="question-item">
                     <p> <?php echo $q->getQuestion();?></p>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" value="0" <?php if($q->getValue() == 0) echo "checked" ?>>0<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" value="1" <?php if($q->getValue() == 1) echo "checked" ?>>1<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" value="2" <?php if($q->getValue() == 2) echo "checked" ?>>2<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" value="3" <?php if($q->getValue() == 3) echo "checked" ?>>3<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" value="4" <?php if($q->getValue() == 4) echo "checked" ?>>4<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" value="5" <?php if($q->getValue() == 5) echo "checked" ?>>5<br>
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="0" <?php if($q->getValue() == 0) echo "checked" ?>>0
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="1" <?php if($q->getValue() == 1) echo "checked" ?>>1
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="2" <?php if($q->getValue() == 2) echo "checked" ?>>2
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="3" <?php if($q->getValue() == 3) echo "checked" ?>>3
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="4" <?php if($q->getValue() == 4) echo "checked" ?>>4
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="5" <?php if($q->getValue() == 5) echo "checked" ?>>5
                 </div>
             <?php }?>
         </div>
@@ -40,15 +42,14 @@
             <input type="submit" name="Sauvegarder" value="Sauvegarder">
         </div>
     </form>
+    <div class="chart-container">
+        <canvas id="axeChart"></canvas>
+    </div>
 </div>
-<div>
-    <?php foreach ($ids as $c){?>
-        <p> Question Id : <?php echo $c->getQuestionId();?></p>
-        <p> text : <?php echo $c->getText();?></p>
-        <p> Coeff : <?php echo $c->getCoeff();?></p>
-        <hr>
-    <?php }?>
-</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/chart.min.js"></script>
+<script src="js/script-chart.js"></script>
 
 </body>
 </html>
