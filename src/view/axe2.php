@@ -29,17 +29,17 @@
             <?php foreach ($axe2 as $q){?>
                 <div class="question-item">
                     <p> <?php echo $q->getQuestion();?></p>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="0" <?php if($q->getValue() == 0) echo "checked" ?>>0<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="1" <?php if($q->getValue() == 1) echo "checked" ?>>1<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="2" <?php if($q->getValue() == 2) echo "checked" ?>>2<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="3" <?php if($q->getValue() == 3) echo "checked" ?>>3<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="4" <?php if($q->getValue() == 4) echo "checked" ?>>4<br>
-                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="5" <?php if($q->getValue() == 5) echo "checked" ?>>5<br>
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="0" <?php if($q->getValue() == 0) echo "checked" ?>>0
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="1" <?php if($q->getValue() == 1) echo "checked" ?>>1
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="2" <?php if($q->getValue() == 2) echo "checked" ?>>2
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="3" <?php if($q->getValue() == 3) echo "checked" ?>>3
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="4" <?php if($q->getValue() == 4) echo "checked" ?>>4
+                    <input type="radio" name="<?php echo $q->getQuestionId();?>" data-coeff=<?php echo $q->getCoeff();?> value="5" <?php if($q->getValue() == 5) echo "checked" ?>>5
                 </div>
             <?php }?>
         </div>
         <div class="save">
-            <input type="submit" name="Sauvegarder" value="Sauvegarder">
+            <input id="save" type="submit" name="Sauvegarder" value="Sauvegarder">
         </div>
     </form>
     <div class="chart-container">
