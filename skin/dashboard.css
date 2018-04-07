@@ -4,13 +4,33 @@
     justify-content: space-between;
 }
 .axeBox {
-    text-align: center;
+    display: flex;
     width: 30%;
     background-color: #F2F2F2;
-    /*margin-right: 15px;*/
-    margin-bottom: 50px;
-    padding: 30px 0;
+    margin-bottom: 30px;
+    padding: 10px;
     border-radius: 12px;
 }
+.axeBox .container-info {
+    height: 140px;
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.axeBox .container-info h2 {
+    margin-top: 0;
+}
+.axeBox .container-info .info-completion {
+    font-size: 18px;
+}
+.axeBox .container-info .btn {
+    bottom: 0;
+    display: none;
+    left:0;
+    position: absolute;
+    right: 0;
+}
+
 
 

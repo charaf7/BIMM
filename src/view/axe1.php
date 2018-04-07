@@ -54,7 +54,7 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/chart.min.js"></script>
-<script src="js/script-chart.js"></script>
+<script src="js/script-axe.js"></script>
 
 </body>
 </html>
