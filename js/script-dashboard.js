@@ -108,7 +108,27 @@ $('document').ready(function () {
 
     $('#axe1-export').on('click', function () {
         var offreData = localStorage.getItem("offreData");
-        JSONToCSVConvertor(offreData, 'Axe offre', true);
+        JSONToCSVConvertor(offreData, 'Offre', true);
+    });
+    $('#axe2-export').on('click', function () {
+        var organisationData = localStorage.getItem("organisationData");
+        JSONToCSVConvertor(organisationData, 'Organisation', true);
+    });
+    $('#axe3-export').on('click', function () {
+        var personneData = localStorage.getItem("personneData");
+        JSONToCSVConvertor(personneData, 'Personne', true);
+    });
+    $('#axe4-export').on('click', function () {
+        var strategieData = localStorage.getItem("strategieData");
+        JSONToCSVConvertor(strategieData, 'Stratégie', true);
+    });
+    $('#axe5-export').on('click', function () {
+        var technologieData = localStorage.getItem("technologieData");
+        JSONToCSVConvertor(technologieData, 'Technologie et innovation', true);
+    });
+    $('#axe6-export').on('click', function () {
+        var environnementData = localStorage.getItem("environnementData");
+        JSONToCSVConvertor(environnementData, 'Environnement', true);
     });
 
 });
