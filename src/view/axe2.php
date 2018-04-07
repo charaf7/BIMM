@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="organisation">
+<body class="organisation" data-code="organisation">
 <div class="header">
     <a class="menu" href="<?php echo $this->router->dashUsualPage();?>"> Menu </a>
     <h1 style="display:none;">BIMM</h1>

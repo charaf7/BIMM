@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="personne">
+<body class="personne" data-code="personne">
 <div class="header">
     <a class="menu" href="<?php echo $this->router->dashUsualPage();?>"> Menu </a>
     <h1 style="display:none;">BIMM</h1>
@@ -39,7 +39,7 @@
             <?php }?>
         </div>
         <div class="save">
-            <input type="submit" name="Sauvegarder" value="Sauvegarder">
+            <input id="save" type="submit" name="Sauvegarder" value="Sauvegarder">
         </div>
     </form>
     <div class="chart-container">

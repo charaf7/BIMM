@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="offre">
+<body class="offre" data-code="offre">
 <main>
     <div class="header">
         <a class="menu" href="<?php echo $this->router->dashUsualPage();?>"> Menu </a>
@@ -41,7 +41,7 @@
             <?php }?>
             </div>
             <div class="save">
-                <input type="submit" name="Sauvegarder" value="Sauvegarder">
+                <input id="save" type="submit" name="Sauvegarder" value="Sauvegarder">
             </div>
         </form>
         <div class="chart-container">

@@ -61,7 +61,7 @@ $('document').ready(function () {
         var averageSkillMax = sumSkillMax/sumCoeff;
         var percentage = (averageSkill*100)/averageSkillMax;
 
-        return percentage.toFixed(2);
+        return parseFloat(percentage.toFixed(2));
     };
 
     var skills = buildSkillArray();
@@ -115,6 +115,28 @@ $('document').ready(function () {
     });
 
     var sampleData = [{"Vehicle":"BMW","Date":"30, Jul 2013 09:24 AM","Location":"Hauz Khas, Enclave, New Delhi, Delhi, India","Speed":42},{"Vehicle":"Honda CBR","Date":"30, Jul 2013 12:00 AM","Location":"Military Road,  West Bengal 734013,  India","Speed":0},{"Vehicle":"Supra","Date":"30, Jul 2013 07:53 AM","Location":"Sec-45, St. Angel's School, Gurgaon, Haryana, India","Speed":58},{"Vehicle":"Land Cruiser","Date":"30, Jul 2013 09:35 AM","Location":"DLF Phase I, Marble Market, Gurgaon, Haryana, India","Speed":83},{"Vehicle":"Suzuki Swift","Date":"30, Jul 2013 12:02 AM","Location":"Behind Central Bank RO, Ram Krishna Rd by-lane, Siliguri, West Bengal, India","Speed":0},{"Vehicle":"Honda Civic","Date":"30, Jul 2013 12:00 AM","Location":"Behind Central Bank RO, Ram Krishna Rd by-lane, Siliguri, West Bengal, India","Speed":0},{"Vehicle":"Honda Accord","Date":"30, Jul 2013 11:05 AM","Location":"DLF Phase IV, Super Mart 1, Gurgaon, Haryana, India","Speed":71}]
+    var buildExportData = function () {
+        var questionId = "";
+        var questionTxt = "";
+        var coef = 0;
+        var points = 0;
+        var result = [];
+        $('.question-item').each(function() {
+            questionTxt = $(this).find('p').text();
+            var inputName = $(this).find('input[type=radio]').attr('name');
+            points = $('input[name='+inputName+']:checked').val();
+            questionId = parseInt(inputName);
+            coef = $('input[name='+inputName+']:checked').attr('data-coeff');
+            result.push({
+                id: questionId,
+                question: questionTxt,
+                coefficient: coef,
+                points: points
+            })
+        })
+        return result;
+    };
+
     var calculateProgress = function () {
         var nbQuestions = 0;
         var questionAnswered = 0;
@@ -126,17 +148,19 @@ $('document').ready(function () {
             nbQuestions++;
         });
         var result = (questionAnswered*100)/nbQuestions;
-        return parseFloat(result.toFixed(1));
+
+        return Math.round(result);
     };
 
     $('#save').on('click', function () {
         var progress = calculateProgress();
-        var axeName = $('body').attr('class');
+        var axeName = $('body').attr('data-code');
         localStorage.setItem(axeName+"Progress", progress);
         // Sauvegarder scores et datas seulement si la progression est à 100%
         if (progress === 100) {
             localStorage.setItem(axeName+"Score", skillsPercentage);
-            //localStorage.setItem(axeName+"Data", JSON.stringify(sampleData));
+            var exportData = buildExportData();
+            localStorage.setItem(axeName+"Data", JSON.stringify(exportData));
         }
         console.log(localStorage.getItem(axeName+"Progress"));
     });
