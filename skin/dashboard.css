@@ -17,6 +17,10 @@
     position: relative;
     text-align: center;
     width: 100%;
+    display: flex;
+}
+.axeBox .container-info .content {
+    margin: auto;
 }
 .axeBox .container-info h2 {
     margin-top: 0;
@@ -24,13 +28,15 @@
 .axeBox .container-info .info-completion {
     font-size: 18px;
 }
-.axeBox .container-info .btn {
-    bottom: 0;
+.btn-container {
     display: none;
-    left:0;
-    position: absolute;
-    right: 0;
+    width: 900px;
+    margin: 0 auto;
 }
+.btn {
+    width: 230px;
+}
+
 
 
 

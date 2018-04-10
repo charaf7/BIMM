@@ -6,44 +6,47 @@ var technoProgress = localStorage.getItem("technologieProgress") ? localStorage.
 var environnementProgress = localStorage.getItem("environnementProgress") ? localStorage.getItem("environnementProgress") : 0;
 
 function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
-    //If JSONData is not an object then JSON.parse will parse the JSON string in an Object
-    var arrData = typeof JSONData != 'object' ? JSON.parse(JSONData) : JSONData;
-
     var CSV = '';
-    //Set Report title in first row or line
 
-    CSV += ReportTitle + '\r\n\n';
+    for (var j=0; j< JSONData.length; j++) {
+        //If JSONData is not an object then JSON.parse will parse the JSON string in an Object
+        var arrData = typeof JSONData[j] != 'object' ? JSON.parse(JSONData[j]) : JSONData[j];
 
-    //This condition will generate the Label/Header
-    if (ShowLabel) {
-        var row = "";
+        //Set Report title in first row or line
+        CSV += ReportTitle[j] + '\r\n\n';
 
-        //This loop will extract the label from 1st index of on array
-        for (var index in arrData[0]) {
+        //This condition will generate the Label/Header
+        if (ShowLabel) {
+            var row = "";
 
-            //Now convert each value to string and comma-seprated
-            row += index + ',';
+            //This loop will extract the label from 1st index of on array
+            for (var index in arrData[0]) {
+
+                //Now convert each value to string and comma-seprated
+                row += index + ',';
+            }
+
+            row = row.slice(0, -1);
+
+            //append Label row with line break
+            CSV += row + '\r\n';
         }
 
-        row = row.slice(0, -1);
+        //1st loop is to extract each row
+        for (var i = 0; i < arrData.length; i++) {
+            var row = "";
 
-        //append Label row with line break
-        CSV += row + '\r\n';
-    }
+            //2nd loop will extract each column and convert it in string comma-seprated
+            for (var index in arrData[i]) {
+                row += '"' + arrData[i][index] + '",';
+            }
 
-    //1st loop is to extract each row
-    for (var i = 0; i < arrData.length; i++) {
-        var row = "";
+            row.slice(0, row.length - 1);
 
-        //2nd loop will extract each column and convert it in string comma-seprated
-        for (var index in arrData[i]) {
-            row += '"' + arrData[i][index] + '",';
+            //add a line break after each row
+            CSV += row + '\r\n';
         }
-
-        row.slice(0, row.length - 1);
-
-        //add a line break after each row
-        CSV += row + '\r\n';
+        CSV += '\r\n\n\n';
     }
 
     if (CSV == '') {
@@ -52,9 +55,10 @@ function JSONToCSVConvertor(JSONData, ReportTitle, ShowLabel) {
     }
 
     //Generate a file name
-    var fileName = "export_";
+    var fileName = "export";
+    //var fileName = "export_";
     //this will remove the blank-spaces from the title and replace it with an underscore
-    fileName += ReportTitle.replace(/ /g,"_");
+    //fileName += ReportTitle.replace(/ /g,"_");
 
     //Initialize file format you want csv or xls
     var uri = 'data:text/csv;charset=utf-8,' + escape(CSV);
@@ -87,48 +91,20 @@ $('document').ready(function () {
     $('#axe5-completion').text(technoProgress);
     $('#axe6-completion').text(environnementProgress);
 
-    if (offreProgress == 100) {
-        $('#axe1-export').css("display", "block");
-    }
-    if (organisationProgress == 100) {
-        $('#axe2-export').css("display", "block");
-    }
-    if (personneProgress == 100) {
-        $('#axe3-export').css("display", "block");
-    }
-    if (strategieProgress == 100) {
-        $('#axe4-export').css("display", "block");
-    }
-    if (technoProgress == 100) {
-        $('#axe5-export').css("display", "block");
-    }
-    if (environnementProgress == 100) {
-        $('#axe6-export').css("display", "block");
+    if (offreProgress == 100 && organisationProgress == 100 && personneProgress == 100 && strategieProgress == 100 && technoProgress == 100 && environnementProgress == 100) {
+        $('.btn-container').css("display", "flex");
     }
 
-    $('#axe1-export').on('click', function () {
+    $('#export-data').on('click', function () {
         var offreData = localStorage.getItem("offreData");
-        JSONToCSVConvertor(offreData, 'Offre', true);
-    });
-    $('#axe2-export').on('click', function () {
         var organisationData = localStorage.getItem("organisationData");
-        JSONToCSVConvertor(organisationData, 'Organisation', true);
-    });
-    $('#axe3-export').on('click', function () {
         var personneData = localStorage.getItem("personneData");
-        JSONToCSVConvertor(personneData, 'Personne', true);
-    });
-    $('#axe4-export').on('click', function () {
         var strategieData = localStorage.getItem("strategieData");
-        JSONToCSVConvertor(strategieData, 'Stratégie', true);
-    });
-    $('#axe5-export').on('click', function () {
         var technologieData = localStorage.getItem("technologieData");
-        JSONToCSVConvertor(technologieData, 'Technologie et innovation', true);
-    });
-    $('#axe6-export').on('click', function () {
         var environnementData = localStorage.getItem("environnementData");
-        JSONToCSVConvertor(environnementData, 'Environnement', true);
+        var dataArray = [offreData, organisationData, personneData, strategieData, technologieData, environnementData];
+        var titleArray = ['Offre', 'Organisation', 'Personne', 'Stratégie', 'Technologie et innovation', 'Environnement'];
+        JSONToCSVConvertor(dataArray, titleArray, true);
     });
 
 });
