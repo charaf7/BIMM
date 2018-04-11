@@ -36,6 +36,10 @@
 .btn {
     width: 230px;
 }
+.chart-container {
+    display: none;
+    margin-top: 50px;
+}
 
 
 

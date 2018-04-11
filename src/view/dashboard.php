@@ -126,7 +126,10 @@
     </div>
     <div class="btn-container">
         <button class="btn" id="export-data">Exporter</button>
-        <a class="btn btn-link" href="">Graphique globale</a>
+        <a class="btn btn-link" id="graphe">Graphique globale</a>
+    </div>
+    <div class="chart-container">
+        <canvas id="globalChart"></canvas>
     </div>
 
 </main>
